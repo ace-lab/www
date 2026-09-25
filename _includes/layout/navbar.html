@@ -22,7 +22,7 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                 {{ item.text }}
               </a>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu dropdown-menu-right">
               {% for subitem in item.menu %}
                 {% if subitem.href %}
                   <a class="dropdown-item{% if subitem.href == page.url %} active{% endif %}" href="{{ subitem.href | relative_url }}" {% if subitem.new_window %}target="_blank"{% endif %}>{{ subitem.text }}</a>

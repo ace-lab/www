@@ -1,27 +1,87 @@
-#-------------------------------------------------------------------------------------
-# in addition to information enumerated here, a PI may _optionally_ choose to 
-# create expanded resource information in _resources/<id>.md
-#-------------------------------------------------------------------------------------
-# Resources are ordered on the Resources page as follows:
-#   in the order they are found in this file
-#-------------------------------------------------------------------------------------
-# the 'id' field is the unique identifier used for tagging and md files
-# '_' characters are removed from the 'id' field to create the name used in Badges
-#-------------------------------------------------------------------------------------
+# Resources listed on the Resources page, grouped by `type` in the order given here.
+# Each id has a full page in content/_resources/<id>.md
 
-# - id: cell_protocol # internal identifier used in newsfeed posts and other places
-#   title: Cell Protocol
-#   type: protocol
-#   description: This is an important protocol for handling cells the way we do it. 
-#   url: https://link.to.protocol/
-#   badges:
-#     - TYPE=ID # e.g. person=John_Doe, project=project1 (no spaces)
+- id: education-focused-5th-year-ms
+  title: "Education-focused 5th year MS"
+  type: "Beyond the Lab"
+  description: "The 5th-year MSCS program (available only to current Berkeley EECS/CS undergrads) lets you spend an additional year taking advanced courses and completing a Masters project. To apply, you need (among…"
 
-- id: cell_protocol # internal identifier used in newsfeed posts and other places
-  title: Cell Protocol
-  type: protocol
-  description: This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it. This is an important protocol for handling cells the way we do it.
-  url: https://link.to.protocol/
-  badges:
-    - person=John_Doe
-    - project=project3
+- id: funding
+  title: "Funding for Education-Related Work & Conference Travel"
+  type: "Beyond the Lab"
+  description: "The Graduate Division Conference Travel Grant is open to Masters students (can receive once) and PhD students (can receive twice, but at most once per year)."
+
+- id: career-development
+  title: "Career Development"
+  type: "Beyond the Lab"
+  description: "Occasional announcements are posted to the teaching track faculty Piazza. (This is a SIGCSE-affiliated group, so not restricted to UC Berkeley.)"
+
+- id: recommended-courses
+  title: "Recommended Courses and Programs of Study"
+  type: "Beyond the Lab"
+  description: "If you’re interested in research that impinges directly on CS education, here are some recommended courses and programs in the Graduate School of Education and the School of Information you…"
+
+- id: getting-started
+  title: "Getting Started Checklist for New Members"
+  type: "For Lab Members"
+  description: "We assume you have and will bring your own wifi-enabled laptop. We have large monitors, full-size keyboards and mice if you wish. Your other computer will be the cloud 🙂"
+
+- id: meeting-schedule
+  title: "Meeting Schedule"
+  type: "For Lab Members"
+  description: "Meetings are generally open to interested visitors. We are in 360 Hearst Mining (“the BiD Lab “). Meetings are brown bag—you’re welcome to bring your lunch."
+
+- id: administrative-info
+  title: "Administrative Info and Processes"
+  type: "For Lab Members"
+  description: "Most of our undergrads work under a Student Assistant III title. Your faculty supervisor will probably have to submit a search waiver. They will need your SID#, email, and…"
+
+- id: reimbursements
+  title: "Reimbursements for Conference Travel, Work-Related Purchases, etc."
+  type: "For Lab Members"
+  description: "If you have purchased supplies or seeking reimbursement for conference registration, etc, you will need to follow these steps to be reimbursed for your expenses:"
+
+- id: conferences-journals
+  title: "Conferences & Journals"
+  type: "For Lab Members"
+  description: "Some of the venues we typically follow and submit our work to… Conferences/workshops sorted by typical deadlines SIGCSE Technical Symposium (Special Interest Group on Computer Science Education): Abstracts due…"
+
+- id: research-methods
+  title: "Research Methods & Reading"
+  type: "For Lab Members"
+  description: "Designing and running experiments, statistical testing, evaluating tools, hints on IRB protocols, and recommended books and paper collections."
+
+- id: citing-your-papers
+  title: "Citing Your Papers in Web Pages/Posts"
+  type: "For Lab Members"
+  description: "How to cite papers (with links to PDFs) on pages of this site."
+
+- id: seating-map
+  title: "Seating Map"
+  type: "For Lab Members"
+  description: "The desk assignments are in this spreadsheet, which most BiD/ACELab faculty are able to edit and any UC Berkeley person can view."
+
+- id: cbtf
+  title: "Computer-Based Testing Facility (CBTF)"
+  type: "Computer-Based Testing Facility (CBTF)"
+  description: "As part of overall Mastery Learning effort, ACELab PIs have worked with EECS, CDSS, CoE, and RTL staff to deploy a Computer-Based Testing Facility. Contact cbt-help@berkeley.edu if after reading…"
+
+- id: cbtf-instructors
+  title: "CBTF: General Information for Instructors"
+  type: "Computer-Based Testing Facility (CBTF)"
+  description: "The CBTF is not a generalized proctoring service. It is a facility and service enabling students to take computer-administered exams in a controlled proctored environment, under specific constraints and circumstances…"
+
+- id: cbtf-students
+  title: "CBTF: Student Procedures"
+  type: "Computer-Based Testing Facility (CBTF)"
+  description: "If you’re a student in a class whose exams are administered in one of Cal’s Computer-Based Testing Facilities (CBTF), please read and understand these procedures before showing up for your…"
+
+- id: cbtf-proctors
+  title: "CBTF: Proctor Instructions"
+  type: "Computer-Based Testing Facility (CBTF)"
+  description: "The above two practices are essential to the whole point of proctored exams, and failing to observe them is cause for immediate termination."
+
+- id: prairielearn-content-creators
+  title: "Resources for PrairieLearn Content Creators"
+  type: "Computer-Based Testing Facility (CBTF)"
+  description: "There are, roughly speaking, three “levels” of content creation possible in PrairieLearn, depending on how much coding ability you have:"

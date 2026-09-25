@@ -3,19 +3,21 @@
 
 # Columns (the more you add, the narrower they will be)
 columns:
+  - description: >
+      The **Algorithms & Computing for Education (ACE) Lab** at UC Berkeley.
+      Located in the BiD Lab (Berkeley Institute of Design), room 360, Hearst Memorial Mining Building.
+    links:
+
   - description:
     links:
-    - text: Department of XYZ
-      href: https://www.XYZ.med.umich.edu/
+    - text: EECS at UC Berkeley
+      href: https://eecs.berkeley.edu/
       new_window: false
-    # add more departments as needed
-
-  - description: > # e.g. funding acknowledgement. Can be Markdown
-      Short summary information about the Doe lab.
-    links:
+    - text: Berkeley Institute of Design (BiD)
+      href: https://bid.berkeley.edu/
+      new_window: false
 
 # Small print license statement to add at the bottom of the footer. Can be Markdown
 # Will be prefixed by "© {{ site.author }}" if defined in _config.yml
 license: >
-  Content on this site is licensed under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/).
-  \| Powered by [umich-labs](https://github.com/wilsonte-umich/umich-labs)
+  Powered by [umich-labs](https://github.com/wilsonte-umich/umich-labs)

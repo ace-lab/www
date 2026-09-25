@@ -1,32 +1,39 @@
 # links listed below will be included in your site's navigation bar
 # you are free to rearrange the order, or omit things you don't want to use
+# (menu: creates a dropdown, one level deep only; an item with only `text` is a section header)
 
-- text: Home # users can also reach the homepage by clicking the site's title in the navbar
-  href: /
+- text: Active Projects # one page per project in content/_projects/*.md
+  href: /projects/
 
-- text: Projects # extended project descriptions in _projects .md files
-  href: /projects/  
+- text: People # to be populated; see pages/people.md
+  href: /people/
 
-- text: People # simpler data set set in people.yml
-  href: /people/ 
-
-- text: Publications # simpler data set set in publications.yml
-  href: /publications/ 
-
-- text: Resources # simpler data set set in funding.yml
-  href: /resources/  
-
-- text: More
-  menu: # Dropdown menu (one level deep only) 
-
-  - text: Events # simpler data set set in events.yml
-    href: /events/  
-
-  - text: Funding # simpler data set set in funding.yml
-    href: /funding/  
-
-  - text: News # extended event descriptions in _posts .md files
-    href: /newsfeed/  
-
-  - text: Contact # simple page unto itself, no connections to other data types
-    href: /contact/
+- text: Resources # merges the old "Beyond the Lab" and "Resources" menus; see _data/resources.yml
+  menu:
+  - text: All Resources
+    href: /resources/
+  - text: "---"
+  - text: Beyond the Lab
+  - text: Education-focused 5th Year MS
+    href: /resources/education-focused-5th-year-ms/
+  - text: Funding for Education Work & Travel
+    href: /resources/funding/
+  - text: Career Development
+    href: /resources/career-development/
+  - text: Recommended Courses & Programs
+    href: /resources/recommended-courses/
+  - text: "---"
+  - text: For Lab Members
+  - text: Getting Started Checklist
+    href: /resources/getting-started/
+  - text: Meeting Schedule
+    href: /resources/meeting-schedule/
+  - text: Administrative Info & Processes
+    href: /resources/administrative-info/
+  - text: Conferences & Journals
+    href: /resources/conferences-journals/
+  - text: Research Methods & Reading
+    href: /resources/research-methods/
+  - text: "---"
+  - text: Computer-Based Testing Facility
+    href: /resources/cbtf/

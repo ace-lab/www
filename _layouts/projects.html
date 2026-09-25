@@ -10,11 +10,26 @@ remarks: See also page.layout == 'projects' in footer.html
   </div>
 </div>
 
+{% assign sorted_projects = site.projects | sort: "order" %}
+{% assign active_projects = sorted_projects | where_exp: "item", "item.active" %}
+{% assign other_projects = sorted_projects | where_exp: "item", "item.active != true" %}
+
+<h3>Active Projects</h3>
 <div class="row cards">
-  {% assign sorted_projects = site.projects | sort: "order" %}
-  {% for project in sorted_projects %}
+  {% for project in active_projects %}
   <div class="col-md-6 col-lg-4">
     {% include cards/project-card.html hide="d-none" %}
   </div>
   {% endfor %}
 </div>
+
+{% if other_projects.size > 0 %}
+<h3 class="mt-4">Other Projects</h3>
+<div class="row cards">
+  {% for project in other_projects %}
+  <div class="col-md-6 col-lg-4">
+    {% include cards/project-card.html hide="d-none" %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

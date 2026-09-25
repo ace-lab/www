@@ -20,7 +20,7 @@
         </div> 
 
         {% capture link_html %}
-            <div>{{ resource.type | capitalize }}</div> 
+            {% unless page.layout == 'resources' %}<div>{{ resource.type }}</div>{% endunless %}
             {% if page.layout == 'resources' %}
             <div class="mt-1 pl-4">{{ resource.description | truncatewords: site.max_words_card_long }}</div>
             {% endif %}  

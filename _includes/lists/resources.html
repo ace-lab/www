@@ -2,6 +2,20 @@
 {% include lists/filtered-list.html %}
 
 {% if filtered.size > 0 %}
+{% if page.layout == 'resources' %}
+{% comment %} on the Resources page, show one section per resource `type`, in data file order {% endcomment %}
+{% assign groups = filtered | group_by: "type" %}
+{% for group in groups %}
+<h3 class="mt-4">{{ group.name }}</h3>
+<div class="row resources">
+{% for resource in group.items %}
+    <div class="col-xl-6">
+    {% include cards/resource-card.html %}
+    </div>
+{% endfor %}
+</div>
+{% endfor %}
+{% else %}
 <div class="row resources">
 {% if layout.embedded_lists %}
 <h4 class="col mt-2"><a class="section-header-link" href="{{ 'resources' | relative_url }}">
@@ -11,10 +25,11 @@
 {% endif %}
 
 {% for resource in filtered %}
-    <div class="{% if page.layout == 'resources' %}col-xl-6{% else %}col-12{% endif %}">
+    <div class="col-12">
     {% include cards/resource-card.html %}
     </div>
 {% endfor %}
 
 </div>
+{% endif %}
 {% endif %}

@@ -2,18 +2,19 @@
 # site settings
 #-------------------------------------------------------------------------------------
 version: 1 # increment version to force a site rebuild and update Recent News even if content is unchanged
-title: John Doe Laboratory # in top navigation bar (navbar) and <head>
-description: John Doe Laboratory, University of Michigan Medical School # description in <head>
-author: John Doe                    # for copyright statement in footer
-url: "https://jdoe-umich.github.io" # no slash at the end
+title: ACE Lab # in top navigation bar (navbar) and <head>
+description: The Algorithms & Computing for Education (ACE) Lab at UC Berkeley # description in <head>
+author: ACE Lab, UC Berkeley          # for copyright statement in footer
+url: "https://ace-lab.github.io"     # no slash at the end
 # baseurl: "/sitename"              # only required if your site is on a subdomain e.g. https://username.github.io/sitename
                                     # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
+                                    # Not needed when this repo is named ace-lab.github.io (or a custom domain is used).
 #-------------------------------------------------------------------------------------
-# social profile of the principal investigator; icon links shown in footer
+# social links; icon links shown in footer
 #-------------------------------------------------------------------------------------
-email: jdoe@umich.edu
+email: null
 twitter_username: null
-github_username: jdoe-umich
+github_username: ace-lab
 #-------------------------------------------------------------------------------------
 # theme display settings
 #-------------------------------------------------------------------------------------
@@ -23,9 +24,9 @@ max_posts_other: 10     # Show x number of recent news posts on other pages
 max_projects_home: 12   # Show x number of active projects on home page
 max_words_card_short: 25  # truncate project, people and news descriptions after this many words in cards
 max_words_card_long: 50   # truncate other descriptions after this many words in cards
-logo: /assets/images/1280px-Michigan_Wolverines_logo-90px_height.png  # Logo in navbar, will be displayed at 30px height
+logo: /assets/images/acelab-logo.svg  # Logo in navbar, will be displayed at 30px height
 colors:
-  links:  "#2F65A7"    # Color for links: use a readable color that contrasts well with dark text
+  links:  "#3B7EA1"    # Color for links (Berkeley "Founders Rock"): use a readable color that contrasts well with dark text
 
 
 # !!! only developers should edit below this line !!!
@@ -45,7 +46,7 @@ collections:
     item: project
     link: page_always
     output: true   
-    hue: 225 # blue
+    hue: 208 # Berkeley Blue
   resources: 
     name: resources
     item: resource
@@ -89,7 +90,7 @@ collections:
 # 90 limegreen
 # 135 green = funding
 # 180 cyan = events
-# 225 blue = projects, also default banner color
+# 208 Berkeley Blue = projects (225 in upstream umich-labs), also default banner color
 # 270 purple = publications
 # 315 magenta = newsfeed (color never used on live page)
 
@@ -155,21 +156,26 @@ defaults:
 #-------------------------------------------------------------------------------------
 # build settings; only developers should edit this section
 #-------------------------------------------------------------------------------------
-remote_theme: wilsonte-umich/umich-labs
+# remote_theme not needed: this repo is a fork of the theme itself
 markdown: kramdown
 plugins: # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from # old acelab.berkeley.edu paths -> new pages, via `redirect_from:` front matter
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - vendor
+  - .ruby-version
+  - LICENSE-petridish
   - LICENSE
   - package-lock.json
   - package.json
   - petridish.gemspec
+
 
 #-------------------------------------------------------------------------------------
 # legacy color settings from petridish, not used by umich-labs
